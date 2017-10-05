@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <com.wajahatkarim3.easyflipview.EasyFlipView
+       android:id="@+id/flipView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#fdfdfd">
+           <ImageView
+               android:id="@+id/ivImage"
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:scaleType="centerCrop"/>
+           <HorizontalScrollView
+               android:layout_width="match_parent"
+               android:layout_height="20dp">
+               <LinearLayout
+                   android:id="@+id/llColor"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+               </LinearLayout>
+           </HorizontalScrollView>
+       </LinearLayout>
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#fdfdfd">
+           <EditText
+               android:id="@+id/edtNote"
+               android:layout_width="match_parent"
+               android:layout_height="150dp"
+               android:inputType="textMultiLine"
+               android:gravity="center_horizontal"
+               android:hint="Note"/>
+           <TextView
+               android:id="@+id/tvAddress"
+               android:layout_width="match_parent"
+               android:layout_height="20dp"/>
+       </LinearLayout>
+   </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="0dp">
+        <ImageButton
+            android:id="@+id/ibUpdate"
+            android:src="@android:drawable/btn_star"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#96bcbca7" />
+        <ImageButton
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:background="#96bcbca7" />
+        <ImageButton
+            android:id="@+id/ibCamera"
+            android:src="@android:drawable/ic_menu_camera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:background="#96bcbca7" />
+        <ImageButton
+            android:id="@+id/ibFlip"
+            android:src="@android:drawable/ic_menu_rotate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#96bcbca7" />
+    </LinearLayout>
+</FrameLayout>

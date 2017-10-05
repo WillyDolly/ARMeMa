@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">AR MeMa</string>
+    <string name="title_activity_maps">AR MemoMap</string>
+
+    <string-array name="color_code">
+        <item>#FFFF5900</item>
+        <item>#FFFFDD00</item>
+        <item>#FFBFFF00</item>
+        <item>#FF00FF04</item>
+        <item>#FF00FFEE</item>
+        <item>#FF00A6FF</item>
+        <item>#FF0015FF</item>
+        <item>#FF9900FF</item>
+        <item>#FFFF00FF</item>
+        <item>#FFFF000D</item>
+    </string-array>
+
+    <integer-array name="hue">
+        <item>21</item>
+        <item>52</item>
+        <item>75</item>
+        <item>123</item>
+        <item>176</item>
+        <item>201</item>
+        <item>235</item>
+        <item>276</item>
+        <item>300</item>
+        <item>359</item>
+    </integer-array>
+</resources>
